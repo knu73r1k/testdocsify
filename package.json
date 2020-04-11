@@ -3,6 +3,6 @@
         "light-server": "^2.6.4"
     },
     "scripts": {
-        "start": "light-server -s . -p 8080"
+        "start": "/home/site/wwwroot/node_modules/light-server -s . -p 8080"
     }
 }
