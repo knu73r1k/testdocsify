@@ -18,9 +18,6 @@ jobs:
     - name: npm install - dependencies
       run: npm install
 
-    - name: npm install light-server globally
-      run: npm install light-server -g
-
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
       with:
