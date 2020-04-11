@@ -15,7 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: npm install - dependencies
+    - name: Setup Node 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: 'npm install - dependencies'
       run: npm install
 
     - name: 'Deploy to Azure Web App'
