@@ -1,0 +1,24 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy GitHub repository to Azure Web App - testdocsify
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v1
+      with:
+        app-name: 'testdocsify'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.az_app_service_testdocsify }}
+        package: .
