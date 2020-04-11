@@ -1,8 +1,8 @@
 {
     "dependencies": {
-        "http-server": "^0.12.1"
+        "light-server": "^2.6.4"
     },
     "scripts": {
-        "start": "http-server -p 8080"
+        "start": "light-server -s . -p 8080"
     }
 }
