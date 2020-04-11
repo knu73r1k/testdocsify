@@ -118,9 +118,7 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-echo "NPM installing light-server"
-eval npm install
-eval npm install light-server
+
 
 ##################################################################################################################################
 echo "Finished successfully."
