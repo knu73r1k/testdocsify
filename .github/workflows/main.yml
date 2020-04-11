@@ -16,7 +16,8 @@ jobs:
     - uses: actions/checkout@master
 
     - name: npm install - dependencies
-      run: npm install
+      run: npm install -g
+      run: npm install light-server -g
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
