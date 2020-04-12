@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v1
+      uses: azure/webapps-deploy@v2
       with:
         app-name: 'testdocsify'
         slot-name: 'production'
